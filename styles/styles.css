@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    max-width: 630px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    color: white;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.container .container-heading-text {
+    color: #00ca4e;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container-input {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#input-pass-len {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background: transparent;
+    border: 2px #ffbd44 solid;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+#input-pass-len:focus {
+    outline: none;
+}
+
+.checkboxes-area {
+    align-self: flex-end;
+    text-align: left;
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.checkbox{
+    cursor: pointer;
+    height: 20px;
+    width: 20px; 
+}
+
+.btn {
+    border: 2px #ff605c solid;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff605c;
+    color: black;
+}
+
+.pass-area {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+}
+
+.pass-text-area{
+    margin-top: 10px;
+    display: flex;
+}
+
+.pass-area .pass-text {
+    text-align: justify;
+    min-width: 120px;
+    border: 3px white solid;
+    padding: 3%;
+    margin-right: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-family: consolas;
+}
+
+.pass-area .copy-btn{
+    cursor: pointer;
+}
+
+.pass-area .copy-btn:hover{
+    color: #ffbd44;
+}
+
+.pass-area .copied-btn{
+    display: none;
+    color: #00ca4e;
+}
